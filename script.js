@@ -1,4 +1,3 @@
-//Code For Testing, Temporary Code 
 // Get the elements
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
