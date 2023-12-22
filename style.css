@@ -42,3 +42,31 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+/* Code Used For Real Project */
+body {
+    background-color: #f5f5f5;
+}
+.search-container {
+    width: 1000px;
+    margin: 50px auto;
+}
+.search-container input {
+    height: 50px;
+}
+.search-container button {
+    height: 50px;
+}
+#weather-results {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
