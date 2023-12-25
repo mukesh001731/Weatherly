@@ -1,16 +1,4 @@
-/* CSS CODE  */
-body {
-    font-family: Arial, sans-serif;
-}
-#app {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
+/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
@@ -19,21 +7,35 @@ body {
   padding: 0;
 }
 
+/* App Styles */
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container Styles */
 .container {
   max-width: 800px;
   margin: 50px auto;
   text-align: center;
 }
 
+/* Heading Styles */
 h1 {
   color: #008080;
 }
 
+/* Paragraph Styles */
 p {
   font-size: 18px;
   line-height: 1.6;
 }
 
+/* Link Styles */
 a {
   color: #0066cc;
   text-decoration: none;
@@ -42,6 +44,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 
 
 
