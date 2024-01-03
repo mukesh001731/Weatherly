@@ -1,3 +1,4 @@
+// JS Code
 // Get the elements
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
@@ -71,7 +72,7 @@ function error() {
 
 
 
-// Code used for Real Project
+// JS Code used for Real Project
 document.getElementById('search-btn').addEventListener('click', function() {
   const city = document.getElementById('city').value;
 
