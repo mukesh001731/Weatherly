@@ -67,11 +67,6 @@ function error() {
 
 
 
-
-
-
-
-
 // JS Code used for Real Project
 document.getElementById('search-btn').addEventListener('click', function() {
   const city = document.getElementById('city').value;
