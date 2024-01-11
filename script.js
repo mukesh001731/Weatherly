@@ -1,4 +1,4 @@
-// JS Code
+// JS Code Complelete it ASAP
 // Get the elements
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
