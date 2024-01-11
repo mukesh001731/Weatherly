@@ -1,4 +1,4 @@
-// JS Code Complelete it ASAP
+// JS Code Complelete it ASAP Mukesh, To start creating Content from 22nd Jan 
 // Get the elements
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
