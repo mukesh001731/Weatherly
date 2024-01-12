@@ -67,7 +67,7 @@ function error() {
 
 
 
-// JS Code used for Real Project
+// JS Code used for Real Project || Complelete it ASAP Mukesh, To start creating Content from 22nd Jan
 document.getElementById('search-btn').addEventListener('click', function() {
   const city = document.getElementById('city').value;
 
