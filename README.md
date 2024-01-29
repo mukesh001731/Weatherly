@@ -10,14 +10,6 @@ City Forecast: Get detailed weather forecasts for any city worldwide.
 Current Location: Allow Weatherly to access your location for instant local weather updates.
 Responsive Design: Enjoy a seamless experience on any device - desktop, tablet, or mobile.
 
-🚀 Getting Started
-Clone the repository: git clone https://github.com/your-username/weatherly.git
-Navigate to the project folder: cd weatherly
-Open index.html in your preferred browser.
-
-⚙️ Installation
-No installation needed! Weatherly is a web app, so simply open it in your browser and start exploring the weather.
-
 🛠️ Technologies Used
 HTML5
 CSS3
