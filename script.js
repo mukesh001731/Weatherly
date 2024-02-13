@@ -1,4 +1,4 @@
-// JS Code Complelete it ASAP Mukesh, To start creating Content from 22nd Jan 
+// JS Code Complete it till 20th Feb 2024  Mukesh,
 // Get the elements
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
