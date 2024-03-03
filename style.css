@@ -12,7 +12,6 @@ body {
     background-size: cover;
   }
   
-  /* <div class="card"> CSS */
   .card {
     left: 0;
     top: 0;
@@ -114,7 +113,6 @@ body {
     left: 20px;
   }
 
-  /* <div class="small-card">  CSS */
   .small-card {
     top: 0;
     right: 0;
