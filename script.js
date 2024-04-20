@@ -1,3 +1,4 @@
+// JS Code
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
 const button = document.getElementById('location-button');
