@@ -4,6 +4,7 @@ const cityInput = document.getElementById('city-input');
 const button = document.getElementById('location-button');
 const weatherData = document.getElementById('weather-data');
 
+
 // Fetching function
 function fetchWeather(city) {
     fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=YOUR_API_KEY`)
@@ -20,6 +21,7 @@ function fetchWeather(city) {
     });
 }
 
+
 // Display data
 function displayWeather(data) {
     const { city: { name }, list } = data;
@@ -33,6 +35,7 @@ function displayWeather(data) {
     ).join('');
     weatherData.innerHTML = output;
 }
+
 
 // Event listeners
 form.addEventListener('submit', event => {
@@ -48,6 +51,7 @@ button.addEventListener('click', () => {
       navigator.geolocation.getCurrentPosition(success, error);
     }
 });
+
 
 function success(position) {
     const { coords: { latitude, longitude } } = position;
