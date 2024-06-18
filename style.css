@@ -2,366 +2,401 @@
   box-sizing: border-box;
 } */
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background: #222;
-    background-image: url("image/0001.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    height: 68.5vh;
-    overflow-y: auto;
-  }
-  
-  /* <div class="card"> CSS */
-  .card {
-    left: 0;
-    top: 0;
-    padding: 1.5em;
-    margin: 1em;
-    width: 100%;
-    max-width: 320px;
-    position: absolute;
-    /* background: #000000d0; */
-    background: rgba(0, 0, 0, 0.055);
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  button {
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 44px;
-    width: 44px;
-    outline: none;
-    background: #7c7c7c2b;
-    color: #00000080;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    background: #fffefed0;
-  }
-  
-  input.search-bar {
-    border: none;
-    outline: none;
-    padding: 0.4em 1em;
-    border-radius: 24px;
-    /* background: #7c7c7c2b; */
-    color: white;
-    font-family: inherit;
-    font-size: 105%;
-    width: calc(100% - 100px);
-    background: #fffefed0;
-  }
-  
-  button:hover {
-    background: #7c7c7c6b;
-  }
-  
-  h1.temp {
-    margin: 0;
-    margin-bottom: 0.4em;
-  }
-  
-  .flex {
-    display: flex;
-    align-items: center;
-  }
-  
-  .weather {
-    position: relative;
-  }
-  
-  .temp {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .city {
-    margin-top: 3em;
-  }
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #222;
+  background-image: url("image/0001.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-  
-  .description {
-    text-transform: capitalize;
-    margin-left: 8px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-  }
-  
-  .icon {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    color: whitesmoke;
-  }
-  
-  .weather.loading {
-    visibility: hidden;
-    max-height: 20px;
-    position: relative;
-  }
-  
-  .weather.loading:after {
-    visibility: visible;
-    content: "Loading...";
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 20px;
-  }
-  
-  /* <div class="small-card">  CSS */
-  .small-card {
-    top: 0;
-    right: 0;
-    margin: 1em;
-    padding: 1.5em;
-    width: 100%;
-    max-width: 180px;
-    display: inline-block;
-    position: absolute;
-    color: white;
-    background: rgba(0, 0, 0, 0.055); 
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    backdrop-filter: blur(10px);
-  }
-  
-  .time {
-    margin-right: 5px;
-    font-size: 30px;
-  }
-  
-  .date {
-    font-size: 15px;
-  }
-  
-  
-  
-  /* <card lg> CSS */
-  
-  .parent {
-    display: flex;
-   /*  overflow: hidden; */
-    font-size: 12px;
-    
-  }
-  
-  .child-1 {
-    background: #000000d0;
-    backdrop-filter: blur(8px); 
-    flex: 1;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
-  }
-  
-  .highlight-list1 {
-    color: white;
-    font-weight: 700;
-    /* border: 1px solid red; */
-    display: grid;
-    place-items: center;
-    
-  }
-  
-  .weather {
-    display: flex;
-    align-items:center;
-    /* justify-content: center; */
-    /* justify-self: flex-start; */
-    /* margin-left: 50px; */
-    justify-content: space-around; 
-    text-align: center;
-    width: 100%;
-   /*  background-color: red; */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 68.5vh;
+  overflow-y: auto;
+}
 
-  }
+/* <div class="card"> CSS */
+.card {
+  left: 0;
+  top: 0;
+  padding: 1.5em;
+  margin: 1em;
+  width: 100%;
+  max-width: 320px;
+  position: absolute;
+  /* background: #000000d0; */
+  background: rgba(0, 0, 0, 0.055);
+  color: white;
+  border-radius: 10px;
+}
 
-  .weather .wrapper
-  {
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    width: 100%;
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    /* background-color: green; */
-  }
-  
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  .wrapper>img{
-    height: 2em;
-    width: 2em;
-   color: white;
-   margin-right: 40px;
-  }
-  
-  .title-2 {
-    color: rgb(255, 255, 255);
-    margin: 12px;
-    margin-left: 140px;
-  }
-  
-  
-  .child-1 .wrapper {
-    margin: 10px;
-  }
+}
 
-  /* CSS for Forecast */
-  
-  .child-1 .material-symbols-outlined {
-    margin-right: 35px;
-  }
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: #00000080;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background: #fffefed0;
+}
 
-  .title-humi{
-    margin-bottom: 2px;
-    margin-top: 0;
-    margin-right: 60px; 
-    font-weight: 200;
-  }
-  .title-humivalue{
-    margin-right: 105px; 
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
-  .title-visi{
-    margin-bottom: 2px;
-    margin-top: 0;
-    margin-right: 20px; 
-    font-weight: 200;
-  }
-  .title-visivalue{
-    margin-right: 2px; 
-    margin-left: 35px;
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  /* background: #7c7c7c2b; */
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+  background: #fffefed0;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.weather {
+  position: relative;
+}
+
+.temp {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.city {
+  margin-top: 3em;
+}
 
 
-  .title-uv{
-    margin-bottom: 2px;
-    margin-top: 0;
-    margin-right: 58px; 
-    font-weight: 200;
-  }
-  .title-uvvalue{
-    margin-right: 85px; 
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
-  .title-pressure{
-    margin-bottom: 2px;
-    margin-top: 0;
-    margin-right: 20px; 
-    font-weight: 200;
-  }
-  .title-pressurevalue{
-    margin-right: 2px; 
-    margin-left: 35px;
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-  
-  .title-wind{
-    margin-bottom: 2px;
-    margin-top: 0;
-    margin-right: 77px; 
-    font-weight: 200;
-  }
-  .title-windvalue{
-    margin-right: 77px; 
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
+}
 
-  .title-dew{
-    margin-bottom: 2px;
-    margin-top: 0;
-    margin-right: 6px; 
-    font-weight: 200;
-  }
-  .title-dewvalue{
-    margin-right: 18px; 
-    margin-left: 40px;
-    margin-bottom: 2px;
-    margin-top: 0;
-  }
-  
-  /* Child-2 CSS  */
-  .child-2 {
-    flex: 1;
-    height: 50%;
-    max-width: 480px;
-    justify-content: center;
-    align-items: center;
-    background: #060912;
-    backdrop-filter: blur(10px);
-  }
+.icon {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  color: whitesmoke;
+}
 
-  .child-2 .title-2 {
-    margin-left: 70px;
-  }
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
 
-  .child-2 h3.title-3{
-    margin-top: -2px;
-    font-size: 12px;
-    font-weight: 200;
-  }
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
 
-  .child-2 p.title-1{
-    font-size: 26px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .highlight-list2 {
-    display: flex;
-    justify-content: center;
-    font-weight: 700;
-    color: white;
-    /* border: 1px solid red; */
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 18px;
-  }
-  
- .weather-wrapper {
-    background-color: #14161f;
-    align-self: center;
-    text-align: center;
-    /* border: 1px solid #ebecf1; */
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 8px;
-    margin-right: 10px;
-    margin-left: 10px;
+/* <div class="small-card">  CSS */
+.small-card {
+  top: 0;
+  right: 0;
+  margin: 1em;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 180px;
+  display: inline-block;
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.055);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
 
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  /* Child-2 CSS Closed */
+.time {
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+.date {
+  font-size: 15px;
+}
+
+
+
+/* <card lg> CSS */
+
+.parent {
+  display: flex;
+  /*  overflow: hidden; */
+  font-size: 12px;
+
+}
+
+.child-1 {
+  background: #000000d0;
+  backdrop-filter: blur(8px);
+  flex: 1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.highlight-list1 {
+  color: white;
+  font-weight: 700;
+  /* border: 1px solid red; */
+  display: grid;
+  place-items: center;
+
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-self: flex-start; */
+  /* margin-left: 50px; */
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  /*  background-color: red; */
+
+}
+
+.weather .wrapper {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  /* background-color: green; */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper>img {
+  height: 2em;
+  width: 2em;
+  color: white;
+
+  margin-right: 40px;
+}
+
+.title-2 {
+  color: rgb(255, 255, 255);
+  margin: 12px;
+  margin-left: 70px;
+}
+
+
+.child-1 .wrapper {
+  margin: 10px;
+}
+
+.Pressure-symbole {
+  position: relative;
+  left: 0.5rem;
+}
+
+.Dew-symblo {
+  position: relative;
+  left: 0.7rem;
+}
+
+/* CSS for Forecast */
+
+.child-1 .material-symbols-outlined {
+  margin-right: 35px;
+}
+
+.title-humi {
+  margin-bottom: 2px;
+  margin-top: 0;
+  margin-right: 60px;
+  font-weight: 200;
+}
+
+.title-humivalue {
+  margin-right: 105px;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+.title-visi {
+  margin-bottom: 2px;
+  margin-top: 0;
+  margin-right: 20px;
+  font-weight: 200;
+}
+
+.title-visivalue {
+  margin-right: 2px;
+  margin-left: 35px;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+
+.title-uv {
+  margin-bottom: 2px;
+  margin-top: 0;
+  position: relative;
+  left: -0.5rem;
+  margin-right: 58px;
+  font-weight: 200;
+}
+
+.title-uvvalue {
+  margin-right: 85px;
+  margin-bottom: 2px;
+  position: relative;
+  left: -0.2rem;
+  margin-top: 0;
+}
+
+.title-pressure {
+  margin-bottom: 2px;
+  margin-top: 0;
+  position: relative;
+  left: 0.5rem;
+  margin-right: 20px;
+  font-weight: 200;
+}
+
+.title-pressurevalue {
+  margin-right: 2px;
+  margin-left: 35px;
+  margin-bottom: 2px;
+  position: relative;
+  left: 0.2rem;
+  margin-top: 0;
+}
+
+
+.title-wind {
+  margin-bottom: 2px;
+  margin-top: 0;
+  position: relative;
+  left: -0.1rem;
+  margin-right: 77px;
+  font-weight: 200;
+}
+
+.title-windvalue {
+  margin-right: 77px;
+  margin-bottom: 2px;
+  margin-top: 0;
+  position: relative;
+  left: 0.5rem;
+}
+
+.title-dew {
+  margin-bottom: 2px;
+  margin-top: 0;
+  margin-right: 6px;
+  font-weight: 200;
+  position: relative;
+  left: 0.8rem;
+}
+
+.title-dewvalue {
+  margin-right: 18px;
+  margin-left: 40px;
+  margin-bottom: 2px;
+  margin-top: 0;
+  position: relative;
+  left: 0.6rem;
+}
+
+/* Child-2 CSS  */
+.child-2 {
+  flex: 1;
+  height: 50%;
+  max-width: 480px;
+  justify-content: center;
+  align-items: center;
+  background: #060912;
+  backdrop-filter: blur(10px);
+}
+
+.child-2 .title-2 {
+  margin-left: 70px;
+}
+
+.child-2 h3.title-3 {
+  margin-top: -2px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.child-2 p.title-1 {
+  font-size: 26px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.highlight-list2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+.weather-wrapper {
+  background-color: #14161f;
+  align-self: center;
+  text-align: center;
+  /* border: 1px solid #ebecf1; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Child-2 CSS Closed */
