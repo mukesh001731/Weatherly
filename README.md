@@ -1,4 +1,4 @@
-🌦️ Weatherly: Your Weather Partner 🌩️
+🌦️ Weatherly: Your Desktop based Weather Partner 🌩️
 
 Dive into the vibrant interface of Weatherly! Perfect for planning your next adventure or staying up-to-date with local weather, our web app delivers responsive and real-time weather details with style.
 
