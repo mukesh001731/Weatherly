@@ -10,7 +10,6 @@ Utilizing Open Weather Map API, Weatherly provides you with live weather forecas
 
 Local Forecast: Access immediate weather details for your location.
 Global Search: Discover forecasts for cities worldwide.
-Adaptive Layout: Enjoy Weatherly on any device, adapting beautifully to desktop, tablet, or phone.
 
 🛠️ Tech Stack
 
