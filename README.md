@@ -29,7 +29,9 @@ View a full weather breakdown for your chosen location.
 🔗 Additional Features 🌐
 
 Interactive Maps: Get a visual snapshot of weather changes.
+
 Watchlist: Keep an eye on the weather in different cities.
+
 Theme Switching: Shift between light and dark modes for comfortable viewing.
 
 📄 License
